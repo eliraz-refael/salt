@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RecoilRoot } from 'recoil';
+import styles from './styles/App.module.css';
+import Header from './components/Header.js';
+import Search from './components/Search.js';
+import Table from './components/table/Table.js';
+import TextCell from './components/table/TextCell.js';
+import BoxCell from './components/table/BoxCell.js';
+
+const columns = [
+  { name: 'Name', width: 2, accessor: row => <TextCell text={row.name }/> },
+  { name: 'PII', width: 1, accessor: row => <BoxCell color="blue" text="PII" on={row.pii} /> },
+  { name: 'Masking', width: 1, accessor: row => <BoxCell color="purple" text="MASKED" on={row.masked} /> },
+  { name: 'Type', width: 5, accessor: row => <BoxCell color="cyan" text={row.type} /> }
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecoilRoot>
+      <div className={styles.App}>
+        <Header />
+        <div className={styles.content}>
+          <Search />
+          <Table columns={columns} type="request" />
+        </div>
+      </div>
+    </RecoilRoot>
   );
 }
 

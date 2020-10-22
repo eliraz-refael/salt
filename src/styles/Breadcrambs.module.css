@@ -1,0 +1,18 @@
+@value colors: './vars.css';
+@value purple from colors;
+
+.breadcrambs {
+    color: purple;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.item {
+    font-weight: bold;
+}
+
+.icon {
+    padding: 0 5px;
+}

@@ -1,0 +1,31 @@
+@value colors: './vars.css';
+@value purple from colors;
+
+.group {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    transition: height .4s ease-out;
+    box-sizing: border-box;
+}
+
+.icon {
+    color: purple;
+    transition: transform .3s ease-out;
+    margin-right: 15px;
+}
+
+.iconOpen {
+    transform: rotate(90deg);
+}

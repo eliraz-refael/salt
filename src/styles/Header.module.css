@@ -1,0 +1,7 @@
+@value config: './vars.css';
+@value spacing from config;
+
+.header {
+    padding-left: spacing;
+    border-bottom: 2px solid #eee;
+}

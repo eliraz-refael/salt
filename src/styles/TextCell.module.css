@@ -1,0 +1,6 @@
+@value colors: './vars.css';
+@value blue from colors;
+
+.cell {
+    color: blue;
+}

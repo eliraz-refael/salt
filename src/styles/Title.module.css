@@ -1,0 +1,17 @@
+@value colors: './vars.css';
+@value purple from colors;
+
+.title {
+    color: purple;
+}
+
+.titleMethod {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.titlePath {
+  font-size: 28px;
+  font-weight: 900;
+  padding-left: 20px
+}

@@ -1,0 +1,31 @@
+@value colors: './vars.css';
+@value purple from colors;
+
+.table {
+    box-shadow: #ccc 0px 1px 4px 1px;
+    background: white;
+    border-radius: 2px;
+    margin-top: 40px;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    color: purple;
+    padding: 15px;
+    padding-left: 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+.row {
+    width: 98%;
+    box-shadow: #ccc 0px 1px 4px 1px;
+    padding: 25px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.rowsWrapper {
+    padding: 15px;
+}

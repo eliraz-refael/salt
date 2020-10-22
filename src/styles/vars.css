@@ -1,0 +1,13 @@
+@value purple: #6a1b9a;
+@value blue: #12296d;
+@value cyan: #cee5ec;
+@value darkCyan: #59a7c0;
+
+@value spacing: 30px;
+
+body, html {
+    height: 100%;
+}
+#root {
+    height: 100%;
+}

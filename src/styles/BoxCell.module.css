@@ -1,0 +1,38 @@
+@value colors: './vars.css';
+@value blue, purple, cyan, darkCyan from colors;
+
+.cell {
+    width: 80px;
+    border: 1px solid;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cellPurple {
+    color: purple;
+    border-color: purple;
+}
+
+.purpleOn {
+    color: white;
+    background-color: purple;
+    border-color: purple;
+}
+
+.cellBlue {
+    color: blue;
+    border-color: blue;
+}
+
+.blueOn {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+.cellCyan {
+    color: darkCyan;
+    background-color: cyan;
+    border-color: cyan;
+}
